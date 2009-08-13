@@ -9,8 +9,7 @@
     // this ensures we don't load any extra code unitl we need to (minimal performance impact)
     var invokeOnURLPatterns = [
         /AccountCallInsert/ig,
-		/ContactCallInsert/ig,
-        /ContactCallDetail/ig
+		/ContactCallInsert/ig
     ];
     
     var pathname = window.location.pathname;
