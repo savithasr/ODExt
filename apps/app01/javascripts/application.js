@@ -120,7 +120,7 @@ var copyContactPreviousObjectiveHandler = function() {
              $objectiveInputElement.val(lastObjectiveValue);
              console.dir(data);  
 
-			addProdDeailedSec();
+			//addProdDeailedSec();
     });
     
 };
@@ -188,13 +188,13 @@ PluginManager.prototype.applyPlugins = function() {
 //***************************************************************************
 var pluginsDefinitions = [
     {
-        name: 'Copy Previous Objective',
+        name: 'Copy Previous Objective Account',
         invokeOnPattern: /AccountCallInsert/ig,
         handler: copyPreviousObjectiveHandler,
         requiresLogin: true
     },
 	{
-        name: 'Copy Previous Objective',
+        name: 'Copy Previous Objective Contact',
         invokeOnPattern: /ContactCallInsert/ig,
         handler: copyContactPreviousObjectiveHandler,
         requiresLogin: true
@@ -222,9 +222,9 @@ applyPlugins();
     
 });
 
-function addProdDeailedSec(){
+/*function addProdDeailedSec(){
 	var newTable = "<tr><td colspan='4'><table class='ctb' cellspacing='0' cellpadding='0'><tr><td>Products Detailed</td><td><div class='buttonChildTitleBarTD'>New</div></td><td width='100%'></td></tr></table></td></tr>";
 	jQuery("[id='ContactCallInsert.VONDMED Next Call']").parent().parent().parent().append(newTable);
 	alert("Added new section");
-}
+}*/
 
