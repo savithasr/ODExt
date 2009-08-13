@@ -806,7 +806,7 @@ OnDemandLib.prototype.activityQuery = function(fields, callback) {
     });
 }
 
-OnDemandLib.prototype.saveProdDetail = function ()
+/*OnDemandLib.prototype.saveProdDetail = function ()
 {
 	var prodName = "Singulair 20x40mg";
 	var indication = "Allergy";
@@ -865,7 +865,7 @@ OnDemandLib.prototype.saveProdDetail = function ()
 			success: function(xmlData, textStatus) {
 			}
 		});	
-}
+} */
 
 OnDemandLib.prototype.login = function(callback) {
 
