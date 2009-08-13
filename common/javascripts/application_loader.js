@@ -6,7 +6,6 @@
     // URL builder helper
     function appURL(relativePath) {
       var basePath = 'http://github.com/savithasr/ODExt/raw/master';
-	  alert("Path : " + basePath + relativePath);
       return basePath + relativePath;
     }
     
