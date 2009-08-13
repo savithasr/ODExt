@@ -59,7 +59,7 @@ var copyPreviousObjectiveHandler = function() {
              }
              
              data.sort(function(item1, item2) {
-                 return Date.parse(item1.StartTime) - Date.parse(item2.StartTime);
+                 return Date.parse(item1.CreatedDate) - Date.parse(item2.CreatedDate);
              });
              
              var lastObjectiveValue = data[data.length - 1].Objective;
@@ -113,7 +113,7 @@ var copyContactPreviousObjectiveHandler = function() {
              }
              
              data.sort(function(item1, item2) {
-                 return Date.parse(item1.StartTime) - Date.parse(item2.StartTime);
+                 return Date.parse(item1.CreatedDate) - Date.parse(item2.CreatedDate);
              });
              
              var lastObjectiveValue = data[data.length - 1].Objective;
